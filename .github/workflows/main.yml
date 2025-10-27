@@ -18,11 +18,7 @@ jobs:
           node-version: 22.x
 
       - name: Install Dependencies
-        run: |
-          cd angular-app      # 👈 Change this to your real folder name (or remove if root)
-          npm install
+        run: npm install
 
       - name: Build Angular App
-        run: |
-          cd angular-app      # 👈 Same folder here
-          npm run build
+        run: npm run build
